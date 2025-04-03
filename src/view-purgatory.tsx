@@ -1,12 +1,4 @@
-import {
-  List,
-  ActionPanel,
-  Action,
-  confirmAlert,
-  Icon,
-  showToast,
-  Toast,
-} from "@raycast/api";
+import { List, ActionPanel, Action, confirmAlert, Icon, showToast, Toast } from "@raycast/api";
 import fs from "fs";
 import os from "os";
 import path from "path";
@@ -33,14 +25,17 @@ export default function Command() {
         const timestamp = lines[0]?.trim();
         const fullEntry = "### " + e.trim();
         const mainLine =
-          lines.find((line) => /^- /.test(line))?.slice(2).trim() ||
-          "(No main entry)";
+          lines
+            .find((line) => /^- /.test(line))
+            ?.slice(2)
+            .trim() || "(No main entry)";
         return {
           timestamp,
           text: mainLine,
           raw: fullEntry,
         };
-      }).reverse();
+      })
+      .reverse();
   }
 
   const refresh = () => {
