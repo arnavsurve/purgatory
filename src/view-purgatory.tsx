@@ -14,12 +14,17 @@ export default function Command() {
     .map((e) => {
       const lines = e.trim().split("\n");
       const timestamp = lines[0]?.trim();
-      const mainLine = lines.find((line) => /^- /.test(line))?.slice(2).trim() || "(No main entry)";
+      const mainLine =
+        lines
+          .find((line) => /^- /.test(line))
+          ?.slice(2)
+          .trim() || "(No main entry)";
       return {
         timestamp,
         text: mainLine,
       };
-    }).reverse();
+    })
+    .reverse();
 
   return (
     <List searchBarPlaceholder="Search Purgatory...">

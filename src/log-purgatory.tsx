@@ -22,7 +22,7 @@ export default function Command() {
   return (
     <Form
       actions={
-        < ActionPanel >
+        <ActionPanel>
           <Action.SubmitForm title="Log Distraction" onSubmit={handleSubmit} />
         </ActionPanel>
       }

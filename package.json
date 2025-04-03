@@ -1,25 +1,22 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "purgatory",
-  "title": "purgatory",
+  "title": "Purgatory",
   "description": "idea purgatory to save ideas for later",
-  "icon": {
-    "light": "assets/icon.png",
-    "dark": "assets/icon@dark.png"
-  },
-  "author": "Arnav Surve",
+  "icon": "icon.png",
+  "author": "arnav_surve",
   "license": "MIT",
   "commands": [
     {
       "name": "log-purgatory",
-      "title": "Send to purgatory",
+      "title": "Send to Purgatory",
       "description": "Send an idea to the purgatory",
       "mode": "view",
       "path": "log-purgatory.tsx"
     },
     {
       "name": "view-purgatory",
-      "title": "View purgatory",
+      "title": "View Purgatory",
       "description": "View purgatory inhabitants",
       "mode": "view",
       "path": "view-purgatory.tsx"
