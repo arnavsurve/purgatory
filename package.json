@@ -2,12 +2,12 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "purgatory",
   "title": "purgatory",
-  "description": "idea purgatory to save tangents for later",
+  "description": "idea purgatory to save ideas for later",
   "icon": {
     "light": "assets/icon.png",
     "dark": "assets/icon@dark.png"
   },
-  "author": "arnav_surve",
+  "author": "Arnav Surve",
   "license": "MIT",
   "commands": [
     {
